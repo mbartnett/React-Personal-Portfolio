@@ -1,0 +1,259 @@
+/* top level elements */
+
+:root {
+    --pink: #ff66ff;
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #666666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+html {
+    background-image: linear-gradient(var(--black),var(--gray))
+        ;
+}
+
+header {
+    padding: 10px;
+}
+
+body {
+    font-family: Figtree, 'Arial Black', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: var(--white)
+}
+
+    /* header & nav */
+
+nav {
+    color: var(--white);
+    margin-bottom: 5%;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    font-family: 'Figtree Ultra 900', 'Arial Black', Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+    width: 33%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--white)
+}
+
+nav ul li a:hover {
+    color: var(--pink);
+}
+
+/* mbart.net module */
+
+h1 {
+    font-family:'Bowlby One', 'Arial Black', Helvetica, Arial, sans-serif;
+    font-size: 90px;
+    line-height: 100px;
+    color: var(--pink);
+    letter-spacing: 0px;
+}
+
+.net {
+    font-family: 'Bowlby One', 'Arial Black', Helvetica, Arial, sans-serif;
+    font-size: 1.6em;
+    letter-spacing: 0px;
+}
+
+h2, h3, h4 {
+    font-family:'Figtree Ultra 900','Arial Black', Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* main content */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    padding: 2%;
+    height: 900px;    
+}
+
+.me {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: stretch;
+    width: 50%;
+    margin-top: 2%;
+    padding: 2%;
+}
+
+.howdy {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 2%;
+    margin-top: 5%;
+    width: 75%;
+    
+}
+
+.about-me {
+    text-align:center;
+    font-size: 16px;
+    line-height: 22px;
+    min-width: 25%;
+}
+
+.howdy img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+    border-radius: 50%;
+    border: solid 2px var(--white);
+}
+
+.content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 2%;
+}
+
+.content a {
+    text-decoration:none;
+    color:var(--white);
+    margin: 0px;
+    padding: 0px;
+}
+
+.content a:hover {
+    color: var(--black);
+    text-decoration: underline;
+}
+
+.wrapper {
+display: flex;
+flex-direction: row;
+margin-bottom: 2%;
+width: 100%;
+}
+
+.project {
+    display: flex;
+    height: 200px;
+    width: 100%;
+}
+
+.project-margin-bottom {
+    margin-bottom: 2%;
+    width: 100%;
+    height: 200px;
+}
+
+.project-margin-side {
+    margin:0 2%;
+    display: flex;
+    height: 200px;
+    width: 100%;
+}
+
+.project img, .project-margin-bottom img, .project-margin-side img {
+    display:flex;
+    height: 200px;
+    width: 200%;
+}
+
+.content h3 {
+    position:absolute;
+    font-size: 20px;
+    line-height: 24px;
+    text-align:left;
+    padding:5% 2%;
+    opacity: 1;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 5%;
+    color: var(--white);
+    background-color: var(--pink);
+}
+
+footer h4{
+    font-size: 16px;
+}
+
+/* media queries */
+
+@media screen and (max-width: 1100px) {
+    .me {
+        width: 100%;
+    }
+
+    .content {
+         width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .me {
+        width: 100%;
+    }
+
+    .content {
+         width: 100%;
+         display: flex;
+         flex-wrap: wrap;
+         flex: 1;
+    }
+
+    .wrapper {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+        }
+
+    .project {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+        }
+
+    .project-margin-bottom {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+        }
+
+    .project-margin-side {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+    }
+}
