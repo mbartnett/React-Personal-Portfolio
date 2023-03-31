@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import Header from './components/header';
-// import './App.css';
+import Footer from './components/footer';
+// import Nav from './components/nav';
 
 import About from './pages/About.js';
 import Contact from './pages/Contact.js';
 import Projects from './pages/Projects.js';
-import Footer from './pages/Footer.js';
+// import Resume from './pages/Resume.js';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('about');
@@ -25,7 +26,7 @@ function App() {
     <>
       <Header setCurrentPage={setCurrentPage} />
       {renderPage()}
-      <footer />
+      <Footer />
     </>
   );
 }
