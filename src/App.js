@@ -27,7 +27,9 @@ function App() {
   return (
     <>
       <Header setCurrentPage={setCurrentPage} />
+      <main>
       {renderPage()}
+      </main>
       <Footer />
     </>
   );

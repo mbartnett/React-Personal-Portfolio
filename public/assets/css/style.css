@@ -1,47 +1,68 @@
+/* Top-Level */
+
+html,
 body {
-  color: white;
-  background: hsla(197, 100%, 63%, 1);
-  background: linear-gradient(
-    90deg,
-    hsla(197, 100%, 63%, 1) 0%,
-    hsla(294, 100%, 55%, 1) 100%
-  );
-  background: -moz-linear-gradient(
-    90deg,
-    hsla(197, 100%, 63%, 1) 0%,
-    hsla(294, 100%, 55%, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    hsla(197, 100%, 63%, 1) 0%,
-    hsla(294, 100%, 55%, 1) 100%
-  );
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", endColorstr="#E81CFF", GradientType=1 );
+    color: white;
+    background: black;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 a {
-  color: white;
-  text-decoration: none;
-}
-
-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-nav a:active,
-a:hover {
-  text-decoration: underline;
-}
-
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    color: white;
+    text-decoration: none;
 }
 
 img {
-  border-radius: 50%;
-  width: 100px;
+    border-radius: 50%;
+    width: 100px;
+    border: 2.5px solid white;
+}
+
+/* Header */
+
+header {
+    flex: 0 0 auto;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-right a {
+    margin-left: 10px;
+}
+
+/* Sections */
+
+main {
+    flex: 1 0 90%;
+}
+
+section {
+    padding: 10px;
+}
+
+/* Footer */
+
+footer {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons i {
+    font-size: 30px;
+    margin: 0 10px;
 }
