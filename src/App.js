@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import Header from './components/header';
 import Footer from './components/footer';
-// import Nav from './components/nav';
 
 import About from './pages/About.js';
+import Portfolio from './pages/Portfolio.js';
+import Resume from './pages/Resume.js';
 import Contact from './pages/Contact.js';
-import Projects from './pages/Projects.js';
-// import Resume from './pages/Resume.js';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('about');
@@ -14,11 +13,14 @@ function App() {
     if (currentPage === 'about') {
       return <About />;
     }
+    if (currentPage === 'portfolio') {
+      return <Portfolio />;
+    }
+    if (currentPage === 'resume') {
+      return <Resume />;
+    }
     if (currentPage === 'contact') {
       return <Contact />;
-    }
-    if (currentPage === 'projects') {
-      return <Projects />;
     }
     return <About />;
   }

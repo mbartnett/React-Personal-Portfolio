@@ -1,16 +1,47 @@
+body {
+  color: white;
+  background: hsla(197, 100%, 63%, 1);
+  background: linear-gradient(
+    90deg,
+    hsla(197, 100%, 63%, 1) 0%,
+    hsla(294, 100%, 55%, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(197, 100%, 63%, 1) 0%,
+    hsla(294, 100%, 55%, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(197, 100%, 63%, 1) 0%,
+    hsla(294, 100%, 55%, 1) 100%
+  );
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", endColorstr="#E81CFF", GradientType=1 );
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav a:active,
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 img {
   border-radius: 50%;
   width: 100px;
-}
-
-body {
-  background-color: gray;
-  /* background-image: linear-gradient(
-    to bottom,
-    #fd746c,
-    #ff9068,
-    #ffab5c,
-    #ffd265,
-    #fcff70
-  ); */
 }

@@ -4,11 +4,10 @@ function header({ setCurrentPage }) {
     return (
         <header>
             <nav>
-                <ul>
-                    <li><a onClick={() => setCurrentPage('about')} href="#howdy">howdy</a></li>
-                    <li><a onClick={() => setCurrentPage('projects')} href="#stuff">stuff</a></li>
-                    <li><a onClick={() => setCurrentPage('contact')} href="#holler">holler</a></li>
-                </ul>
+                <a onClick={() => setCurrentPage('about')} href="#about">about</a>
+                <a onClick={() => setCurrentPage('portfolio')} href="#portfolio">portfolio</a>
+                <a onClick={() => setCurrentPage('resume')} href="#resume">resume</a>
+                <a onClick={() => setCurrentPage('contact')} href="#contact">contact</a>
             </nav>
         </header>
     );
