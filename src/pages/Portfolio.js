@@ -1,9 +1,10 @@
 import React from 'react';
+import Projects from '../components/projects';
 
 export default function Portfolio() {
     return (
         <section class="portfolio">
-            <h1>portfolio</h1>
+            <Projects />
         </section>
     );
 }

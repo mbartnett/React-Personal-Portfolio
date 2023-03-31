@@ -4,6 +4,7 @@ html,
 body {
     color: white;
     background: black;
+    font-family: 'Gotham', Arial, Helvetica, sans-serif
 }
 
 #root {
@@ -17,11 +18,14 @@ a {
     text-decoration: none;
 }
 
-img {
-    border-radius: 50%;
-    width: 100px;
-    border: 2.5px solid white;
+/* Headings */
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
 }
+
 
 /* Header */
 
@@ -33,20 +37,82 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
+    font-size: 24px;
+    margin-top: 10px;
+    font-family: 'Gotham Black', 'Arial Black', Arial;
 }
 
 .nav-right a {
-    margin-left: 10px;
+    margin-left: 25px;
 }
 
 /* Sections */
 
 main {
+    display: flex;
     flex: 1 0 90%;
 }
 
-section {
-    padding: 10px;
+/* About */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.howdy {
+    display: flex;
+    align-items: center;
+}
+
+h2.howdy {
+    font-size: 182px;
+    line-height: 162px;
+    font-weight: 800;
+    font-family: Gotham Ultra;
+    letter-spacing: 4px;
+}
+
+p.bio {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: .2px;
+    transform: scaleY(.95);
+}
+
+.about img {
+    border-radius: 50%;
+    width: 250px;
+    border: 7.5px solid white;
+    margin: 0 25px;
+}
+
+/* Portfolio */
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
 }
 
 /* Footer */
@@ -56,6 +122,7 @@ footer {
     display: flex;
     justify-content: center;
     padding: 10px;
+    margin-bottom: 10px;
 }
 
 .social-icons {
