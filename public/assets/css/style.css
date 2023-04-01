@@ -21,12 +21,6 @@ a {
 a:hover,
 a:active {
     color: #ff00ff;
-    text-decoration: underline;
-}
-
-.nav-active {
-    color: #ff00ff;
-    text-decoration: underline;
 }
 
 /* Headings */
@@ -48,18 +42,36 @@ h2 {
 
 header {
     flex: 0 0 auto;
-    padding: 25px;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    font-size: 24px;
-    font-family: 'Gotham Black', 'Arial Black', Arial;
+    padding: 20px 0;
+}
+
+.nav-left a {
+    font-family: 'Gotham Ultra', 'Arial Black', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    background: linear-gradient(to right, #ff00ff, #ccff00);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    line-height: .75;
+    padding: 20px;
 }
 
 .nav-right a {
-    margin-left: 50px;
+    font-family: 'Gotham', 'Arial Black', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin-right: 50px;
+    font-weight: 400;
+    padding: 20px;
+}
+
+#last-nav {
+    margin-right: 0px;
 }
 
 /* Sections */
@@ -108,8 +120,8 @@ p.bio {
 .about img {
     border-radius: 50%;
     width: 250px;
-    border: 7.5px solid white;
-    margin: 0 25px;
+    border: 2.5px solid white;
+    margin: 0 30px;
     background-color: #ccff00;
 }
 
@@ -138,9 +150,9 @@ p.bio {
 }
 
 .portfolio h2 {
-    font-size: 63px;
-    font-family: 'Gotham Black', 'Arial Black', Arial;
-    color: #ccff00;
+    font-size: 50px;
+    font-family: 'Gotham Ultra', 'Arial Black', Arial;
+    color: #ff00ff;
 }
 
 /* Resume */
@@ -174,9 +186,10 @@ p.bio {
 }
 
 .resume-skills h2 {
-    font-size: 63px;
-    font-family: 'Gotham Black', 'Arial Black', Arial;
+    font-size: 50px;
+    font-family: 'Gotham Ultra', 'Arial Black', Arial;
     color: #ccff00;
+    margin-bottom: 5px;
 }
 
 .resume-skills p {
@@ -185,14 +198,22 @@ p.bio {
 }
 
 /* Contact */
-.form-group {
-    margin-bottom: 20px;
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+.contact h2 {
+    font-size: 50px;
+    font-family: 'Gotham Ultra', 'Arial Black', Arial;
+    color: #ff00ff;
+}
+
+#contact-form {
+    width: 50%;
 }
 
 input[type="text"],
@@ -201,23 +222,22 @@ textarea {
     width: 100%;
     padding: 10px;
     border-radius: 4px;
-    box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
 .error-message {
     color: #ff00ff;
     font-size: 12px;
-    margin-top: 5px;
     display: none;
 }
 
 button[type="submit"] {
     background-color: #ff00ff;
     color: white;
-    padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    padding: 10px 10px 0;
 }
 
 button[type="submit"]:hover {
@@ -227,7 +247,6 @@ button[type="submit"]:hover {
 #form-status {
     margin-top: 20px;
 }
-
 
 /* Footer */
 
@@ -244,7 +263,7 @@ footer {
 }
 
 .social-icons i {
-    font-size: 30px;
+    font-size: 25px;
     margin: 0 10px;
 }
 
