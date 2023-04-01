@@ -1,11 +1,11 @@
 import React from 'react';
 
-function header({ setCurrentPage }) {
+function header({ setCurrentPage, activePage }) {
     return (
         <header>
             <nav>
                 <div class="nav-left">
-                    <a onClick={() => setCurrentPage('/')} href="/">mbartnett</a>
+                    <a onClick={() => setCurrentPage('/')} href="/">mbart.net</a>
                 </div>
                 <div class="nav-right">
                     <a onClick={() => setCurrentPage('about')} href="#about">about</a>

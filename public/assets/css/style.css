@@ -3,7 +3,7 @@
 html,
 body {
     color: white;
-    background: black;
+    background-color: black;
     font-family: 'Gotham', Arial, Helvetica, sans-serif
 }
 
@@ -18,6 +18,17 @@ a {
     text-decoration: none;
 }
 
+a:hover,
+a:active {
+    color: #ff00ff;
+    text-decoration: underline;
+}
+
+.nav-active {
+    color: #ff00ff;
+    text-decoration: underline;
+}
+
 /* Headings */
 
 h1 {
@@ -26,24 +37,29 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    font-size: 24px;
+    font-family: 'Gotham Black', 'Arial Black', Arial;
+    ;
+    margin: 0;
+}
 
 /* Header */
 
 header {
     flex: 0 0 auto;
-    padding: 10px;
+    padding: 25px;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     font-size: 24px;
-    margin-top: 10px;
     font-family: 'Gotham Black', 'Arial Black', Arial;
 }
 
 .nav-right a {
-    margin-left: 25px;
+    margin-left: 50px;
 }
 
 /* Sections */
@@ -74,6 +90,11 @@ h2.howdy {
     font-weight: 800;
     font-family: Gotham Ultra;
     letter-spacing: 4px;
+    background: linear-gradient(to right, #ff00ff, #ccff00);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 p.bio {
@@ -89,6 +110,7 @@ p.bio {
     width: 250px;
     border: 7.5px solid white;
     margin: 0 25px;
+    background-color: #ccff00;
 }
 
 /* Portfolio */
@@ -115,6 +137,98 @@ p.bio {
     background-color: #fff;
 }
 
+.portfolio h2 {
+    font-size: 63px;
+    font-family: 'Gotham Black', 'Arial Black', Arial;
+    color: #ccff00;
+}
+
+/* Resume */
+
+.resume {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.resume-image {
+    display: flex;
+    justify-content: center;
+    width: 33%;
+    margin: 20px;
+}
+
+.resume-image img {
+    width: 500px;
+}
+
+.resume-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33%;
+    text-align: center;
+    margin: 20px;
+}
+
+.resume-skills h2 {
+    font-size: 63px;
+    font-family: 'Gotham Black', 'Arial Black', Arial;
+    color: #ccff00;
+}
+
+.resume-skills p {
+    font-size: 28px;
+    font-family: 'Gotham', Arial, Helvetica, sans-serif;
+}
+
+/* Contact */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.error-message {
+    color: #ff00ff;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+button[type="submit"] {
+    background-color: #ff00ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff00ff;
+}
+
+#form-status {
+    margin-top: 20px;
+}
+
+
 /* Footer */
 
 footer {
@@ -133,3 +247,5 @@ footer {
     font-size: 30px;
     margin: 0 10px;
 }
+
+/* Media Queries */

@@ -5,7 +5,7 @@ export default function About() {
         <section class="about">
             <div class="howdy">
                 <div class="photo">
-                    <img src="assets/images/me.jpg" id="howdy" alt="me" />
+                    <img src="assets/images/me.png" id="howdy" alt="me" />
                 </div>
                 <div class="bio">
                     <h2 class="howdy">HOWDY</h2>
