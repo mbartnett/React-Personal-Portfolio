@@ -58,6 +58,11 @@ nav {
     padding: 20px 15px;
 }
 
+.nav-active {
+    color: #ccff00;
+    text-decoration: underline;
+}
+
 .nav-left a {
     font-family: 'Gotham Ultra', 'Arial Black', Arial, Helvetica, sans-serif;
     font-size: 30px;
@@ -72,6 +77,7 @@ nav {
 
 .nav-left a:hover {
     text-decoration: none;
+    color: #ffffff;
 }
 
 .nav-right a {
@@ -322,7 +328,7 @@ p.bio {
     transform: scaleY(.95);
 }
 
-.download {
+/* .download {
     font-size: 22px;
     font-family: 'Gotham', Arial, Helvetica, sans-serif;
     letter-spacing: .2px;
@@ -335,7 +341,7 @@ p.bio {
 
 .download a:hover {
     text-decoration: underline;
-}
+} */
 
 
 /* Contact */

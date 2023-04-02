@@ -1,6 +1,6 @@
 import React from 'react';
 
-function header({ setCurrentPage, activePage }) {
+function header({ setCurrentPage, currentPage, activePage }) {
     return (
         <header>
             <nav>
@@ -9,7 +9,7 @@ function header({ setCurrentPage, activePage }) {
                 </div>
                 <div class="nav-right">
                     <a onClick={() => setCurrentPage('about')} href="#about">about</a>
-                    <a onClick={() => setCurrentPage('portfolio')} href="#portfolio">portfolio</a>
+                    <a onClick={() => setCurrentPage('portfolio')} href="#portfolio" className={currentPage === 'portfolio' ? 'nav-active' : 'nav-right'}>portfolio</a>
                     <a onClick={() => setCurrentPage('resume')} href="#resume">resume</a>
                     <a onClick={() => setCurrentPage('contact')} href="#contact" id="last-nav">contact</a>
                 </div>
