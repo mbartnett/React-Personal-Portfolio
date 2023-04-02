@@ -220,12 +220,14 @@ p.bio {
     font-size: 75px;
     font-family: 'Gotham Ultra', 'Arial Black', Arial;
     letter-spacing: 1px;
+    font-weight: 500;
     /* color: #ccff00; */
 }
 
 .portfolio h3 {
     font-size: 30px;
-    font-family: 'Gotham Black', 'Arial Black', Arial;
+    font-family: 'Gotham Ultra', 'Arial Black', Arial;
+    font-weight: 500;
     color: #ffffff;
     line-height: 32px;
     margin-bottom: 15px;
@@ -238,7 +240,7 @@ p.bio {
 
 .portfolio-links a {
     display: inline-block;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     margin: 0px;
     padding: 0px;
@@ -283,8 +285,8 @@ p.bio {
 }
 
 .resume-download h2 {
-    font-size: 182px;
-    line-height: 162px;
+    font-size: 142px;
+    line-height: 122px;
     font-weight: 800;
     font-family: Gotham Ultra;
     letter-spacing: 4px;
@@ -294,11 +296,12 @@ p.bio {
     background-clip: text;
     color: transparent;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .resume-skills h2 {
-    font-size: 182px;
-    line-height: 162px;
+    font-size: 142px;
+    line-height: 122px;
     font-weight: 800;
     font-family: Gotham Ultra;
     letter-spacing: 4px;
@@ -308,12 +311,32 @@ p.bio {
     background-clip: text;
     color: transparent;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .resume p {
-    font-size: 30px;
+    font-size: 22px;
     font-family: 'Gotham', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .2px;
+    transform: scaleY(.95);
 }
+
+.download {
+    font-size: 22px;
+    font-family: 'Gotham', Arial, Helvetica, sans-serif;
+    letter-spacing: .2px;
+    transform: scaleY(.95);
+}
+
+.download a {
+    color: #ccff00;
+}
+
+.download a:hover {
+    text-decoration: underline;
+}
+
 
 /* Contact */
 .contact {
