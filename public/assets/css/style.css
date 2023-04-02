@@ -20,7 +20,8 @@ a {
 
 a:hover,
 a:active {
-    color: #ff00ff;
+    color: #ccff00;
+    text-decoration: underline;
 }
 
 p {
@@ -54,19 +55,23 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 20px 15px;
 }
 
 .nav-left a {
     font-family: 'Gotham Ultra', 'Arial Black', Arial, Helvetica, sans-serif;
-    font-size: 36px;
-    /* background: linear-gradient(to right, #ff00ff, #ccff00);
+    font-size: 30px;
+    /* background: linear-gradient(to bottom, #ff00ff, #ccff00);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
     color: transparent; */
     line-height: .75;
     padding: 20px;
+}
+
+.nav-left a:hover {
+    text-decoration: none;
 }
 
 .nav-right a {
@@ -109,7 +114,7 @@ h2.howdy {
     font-weight: 800;
     font-family: Gotham Ultra;
     letter-spacing: 4px;
-    background: linear-gradient(to right, #ff00ff, #ccff00);
+    background: linear-gradient(to bottom, #ff00ff, #ccff00);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
@@ -127,9 +132,21 @@ p.bio {
 .about img {
     border-radius: 50%;
     width: 250px;
-    border: 2.5px solid white;
+    /* border: 2.5px solid white; */
     margin: 0 30px;
-    background-color: #ccff00;
+    /* background: linear-gradient(to bottom, #ff00ff, #ccff00); */
+    /* background-color: #ccff00; */
+    /* background-color: #4B72FF; */
+    /* background-color: #6600FF;
+    background-color: #ff00ff; */
+    background: linear-gradient(to bottom, #40c9ff, #e81cff);
+    transition: transform 0.1s ease-in-out;
+}
+
+.about img:hover {
+    /* transform: scale(1.1) rotate(10deg); */
+    transform: scale(1.2);
+    /* border: 2.5px solid white; */
 }
 
 /* Portfolio */
@@ -148,42 +165,89 @@ p.bio {
     align-items: center;
 }
 
-.card {
+.card-blue {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 10px;
+    margin: 20px;
     padding: 20px;
     width: 250px;
     height: 250px;
-    background-color: #6600ff;
     color: #ffffff;
     font-family: 'Gotham', Arial, Helvetica, sans-serif;
     font-weight: 500;
+    background: linear-gradient(to bottom, #40c9ff, #e81cff);
+    border-radius: 50%;
+    transition: transform 0.1s ease-in-out;
+    /* background-color: #4B72FF; */
+    /* border: 2.5px solid white; */
+}
+
+.card-blue:hover {
+    /* transform: scale(1.1) rotate(10deg); */
+    transform: scale(1.2);
+}
+
+.card-pink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    width: 250px;
+    height: 250px;
+    color: #ffffff;
+    font-family: 'Gotham', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    background: linear-gradient(to bottom, #ff00ff, #ccff00);
+    border-radius: 50%;
+    transition: transform 0.1s ease-in-out;
+    /* background-color: #ff00ff; */
+    /* border: 2.5px solid white; */
+}
+
+.card-pink:hover {
+    /* transform: scale(1.1) rotate(10deg); */
+    transform: scale(1.2);
+    /* border: 2.5px solid white; */
 }
 
 .portfolio h2 {
-    font-size: 50px;
+    font-size: 75px;
     font-family: 'Gotham Ultra', 'Arial Black', Arial;
-    color: #ccff00;
+    letter-spacing: 1px;
+    /* color: #ccff00; */
 }
 
 .portfolio h3 {
     font-size: 30px;
     font-family: 'Gotham Black', 'Arial Black', Arial;
     color: #ffffff;
+    line-height: 32px;
+    margin-bottom: 15px;
+    /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); */
+}
+
+.portfolio-links {
+    margin: 0;
 }
 
 .portfolio-links a {
     display: inline-block;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+    line-height: 24px;
 }
 
 .portfolio-links a:hover {
-    font-weight: 600;
+    color: black;
+    text-decoration: underline;
 }
 
 /* Resume */
@@ -196,35 +260,58 @@ p.bio {
     width: 100%;
 }
 
-.resume-image {
-    display: flex;
-    justify-content: center;
-    width: 33%;
-    margin: 20px;
-}
+/* .resume-image img {
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+} */
 
-.resume-image img {
-    width: 500px;
+.resume-download {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    text-align: center;
 }
 
 .resume-skills {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 33%;
+    width: 40%;
     text-align: center;
-    margin: 20px;
+}
+
+.resume-download h2 {
+    font-size: 182px;
+    /* line-height: 162px; */
+    font-weight: 800;
+    font-family: Gotham Ultra;
+    letter-spacing: 4px;
+    background: linear-gradient(to bottom, #ff00ff, #ccff00);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
 }
 
 .resume-skills h2 {
-    font-size: 50px;
-    font-family: 'Gotham Ultra', 'Arial Black', Arial;
-    color: #ccff00;
-    margin-bottom: 5px;
+    font-size: 182px;
+    /* line-height: 162px; */
+    font-weight: 800;
+    font-family: Gotham Ultra;
+    letter-spacing: 4px;
+    background: linear-gradient(to bottom, #40c9ff, #e81cff);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
 }
 
-.resume-skills p {
-    font-size: 28px;
+.resume p {
+    font-size: 30px;
     font-family: 'Gotham', Arial, Helvetica, sans-serif;
 }
 
@@ -238,13 +325,22 @@ p.bio {
 }
 
 .contact h2 {
-    font-size: 50px;
+    font-size: 80px;
     font-family: 'Gotham Ultra', 'Arial Black', Arial;
-    color: #ff00ff;
+    color: #ccff00;
+    /* background: linear-gradient(to bottom, #ff00ff, #ccff00);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent; */
 }
 
 #contact-form {
-    width: 50%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 input[type="text"],
@@ -263,16 +359,24 @@ textarea {
 }
 
 button[type="submit"] {
-    background-color: #ff00ff;
+    background-color: #4B72FF;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    padding: 10px 10px 0;
+    width: 200px;
+    height: 50px;
+    font-family: 'Gotham Black';
+    text-transform: uppercase;
+    font-size: 20px;
 }
 
 button[type="submit"]:hover {
-    background-color: #ff00ff;
+    background-color: #6C0AFF;
+}
+
+.form-group {
+    width: 100%;
 }
 
 #form-status {
@@ -294,7 +398,7 @@ footer {
 }
 
 .social-icons i {
-    font-size: 25px;
+    font-size: 32px;
     margin: 0 10px;
 }
 
