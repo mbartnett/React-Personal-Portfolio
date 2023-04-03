@@ -33,7 +33,7 @@ export default function Contact() {
             <div className="form-container">
                 <form id="contact-form" onSubmit={submitHandler}>
                     <div className="form-group">
-                        <label htmlFor="name">NAME:</label>
+                        <label htmlFor="name">NAME</label>
                         <input
                             value={formState.name}
                             onChange={(event) => setFormState({ ...formState, name: event.target.value })}
@@ -46,7 +46,7 @@ export default function Contact() {
                         {errors.name && <div className="error-message">&bull; name is required</div>}
                     </div>
                     <div className="form-group">
-                        <label htmlFor="email">EMAIL:</label>
+                        <label htmlFor="email">EMAIL</label>
                         <input
                             value={formState.email}
                             onChange={(event) => setFormState({ ...formState, email: event.target.value })}
@@ -59,7 +59,7 @@ export default function Contact() {
                         {errors.email && <div className="error-message">&bull; please enter a valid email address</div>}
                     </div>
                     <div className="form-group">
-                        <label htmlFor="message">MESSAGE:</label>
+                        <label htmlFor="message">MESSAGE</label>
                         <textarea
                             value={formState.message}
                             onChange={(event) => setFormState({ ...formState, message: event.target.value })}
