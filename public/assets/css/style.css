@@ -66,11 +66,6 @@ nav {
 .nav-left a {
     font-family: 'Gotham Ultra', 'Arial Black', Arial, Helvetica, sans-serif;
     font-size: 30px;
-    /* background: linear-gradient(to bottom, #ff00ff, #ccff00);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent; */
     line-height: .75;
     padding: 20px;
 }
@@ -138,21 +133,13 @@ p.bio {
 .about img {
     border-radius: 50%;
     width: 250px;
-    /* border: 2.5px solid white; */
     margin: 0 30px;
-    /* background: linear-gradient(to bottom, #ff00ff, #ccff00); */
-    /* background-color: #ccff00; */
-    /* background-color: #4B72FF; */
-    /* background-color: #6600FF;
-    background-color: #ff00ff; */
     background: linear-gradient(to bottom, #40c9ff, #e81cff);
     transition: transform 0.1s ease-in-out;
 }
 
 .about img:hover {
-    /* transform: scale(1.1) rotate(10deg); */
     transform: scale(1.2);
-    /* border: 2.5px solid white; */
 }
 
 /* Portfolio */
@@ -187,12 +174,9 @@ p.bio {
     background: linear-gradient(to bottom, #40c9ff, #e81cff);
     border-radius: 50%;
     transition: transform 0.1s ease-in-out;
-    /* background-color: #4B72FF; */
-    /* border: 2.5px solid white; */
 }
 
 .card-blue:hover {
-    /* transform: scale(1.1) rotate(10deg); */
     transform: scale(1.2);
 }
 
@@ -212,14 +196,10 @@ p.bio {
     background: linear-gradient(to bottom, #ff00ff, #ccff00);
     border-radius: 50%;
     transition: transform 0.1s ease-in-out;
-    /* background-color: #ff00ff; */
-    /* border: 2.5px solid white; */
 }
 
 .card-pink:hover {
-    /* transform: scale(1.1) rotate(10deg); */
     transform: scale(1.2);
-    /* border: 2.5px solid white; */
 }
 
 .portfolio h2 {
@@ -227,7 +207,6 @@ p.bio {
     font-family: 'Gotham Ultra', 'Arial Black', Arial;
     letter-spacing: 1px;
     font-weight: 500;
-    /* color: #ccff00; */
 }
 
 .portfolio h3 {
@@ -237,7 +216,6 @@ p.bio {
     color: #ffffff;
     line-height: 32px;
     margin-bottom: 15px;
-    /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); */
 }
 
 .portfolio-links {
@@ -267,12 +245,6 @@ p.bio {
     align-items: center;
     width: 100%;
 }
-
-/* .resume-image img {
-    width: 600px;
-    height: 600px;
-    border-radius: 50%;
-} */
 
 .resume-download {
     display: flex;
@@ -347,24 +319,19 @@ p.bio {
 /* Contact */
 .contact {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* background: linear-gradient(to bottom, #ff00ff, #ccff00); */
 }
 
-.contact label {
-    font-size: 22px;
-    text-transform: uppercase;
-    font-weight: 400;
-    letter-spacing: .2px;
-    transform: scaleY(.95);
+.holler-container {
+    padding: 25px;
 }
 
-.contact h2 {
-    font-size: 92px;
-    line-height: 72px;
+.contact .holler-container h2 {
+    font-size: 142px;
+    line-height: 122px;
     font-weight: 800;
     font-family: Gotham Ultra;
     letter-spacing: 4px;
@@ -377,15 +344,9 @@ p.bio {
     margin-bottom: 30px;
 }
 
-/* .contact .circle {
-    width: 600px;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-} */
+.contact .form-container {
+    padding: 25px;
+}
 
 #contact-form {
     width: 600px;
@@ -393,8 +354,18 @@ p.bio {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* border-radius: 50%; */
-    /* background: linear-gradient(to bottom, #ff00ff, #ccff00); */
+}
+
+.form-group {
+    width: 100%;
+}
+
+.contact label {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: .2px;
+    transform: scaleY(.95);
 }
 
 input[type="text"],
@@ -419,8 +390,8 @@ textarea {
 
 .error-message {
     color: #ff00ff;
-    font-size: 12px;
-    display: none;
+    font-size: 14px;
+    margin-bottom: 20px;
 }
 
 button[type="submit"] {
@@ -437,14 +408,6 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background: linear-gradient(to top, #40c9ff, #e81cff);
-}
-
-.form-group {
-    width: 100%;
-}
-
-#form-status {
-    margin-top: 20px;
 }
 
 /* Footer */

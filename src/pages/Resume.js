@@ -6,7 +6,7 @@ export default function Resume() {
         <section class="resume">
             <div class="resume-download">
                 <h2>RESUME</h2>
-                <p class="download">Looking for a creative, detail-oriented developer and designer to collaborate with? Let's make it  happen.<br /> <h4><a href="https://google.com">Download my resume</a></h4></p>
+                <p class="download">Looking for a creative, detail-oriented developer and designer to collaborate with? Look no further.<br /> <h4><a href="https://google.com">Download my resume</a></h4></p>
             </div>
             <div class="resume-skills">
                 <h2>Skills</h2>
