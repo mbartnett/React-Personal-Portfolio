@@ -327,7 +327,7 @@ p.bio {
 
 .holler-container {
     padding: 60px;
-    margin-right: 20px;
+    margin-bottom: 80px;
 }
 
 .contact .holler-container h2 {
@@ -342,7 +342,6 @@ p.bio {
     background-clip: text;
     color: transparent;
     text-transform: uppercase;
-    margin-bottom: 30px;
 }
 
 .contact .form-container {
