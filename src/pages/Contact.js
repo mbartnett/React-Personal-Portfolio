@@ -8,7 +8,6 @@ export default function Contact() {
         event.preventDefault();
         console.log(formState);
 
-        // check for empty fields and set errors state
         const errorObj = {};
         Object.keys(formState).forEach(key => {
             if (!formState[key]) {
@@ -19,7 +18,6 @@ export default function Contact() {
         });
         setErrors(errorObj);
 
-        // if no errors, send email
         if (!Object.values(errorObj).includes(true)) {
             window.location.href = "mailto:mbartnett@gmail.com?subject=" + formState.name + "&body=" + formState.message;
         }

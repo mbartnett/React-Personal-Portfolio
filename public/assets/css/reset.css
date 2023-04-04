@@ -63,7 +63,7 @@ img {
 
 /* natural flow and rhythm in articles by default */
 
-article > * + * {
+article>*+* {
   margin-top: 1em;
 }
 
@@ -74,6 +74,7 @@ button,
 textarea,
 select {
   font: inherit;
+  caret-shape: bar;
 }
 
 /* remove all animations and transitions for people that prefer not to see them */
