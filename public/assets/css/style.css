@@ -254,21 +254,21 @@ p.bio {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 40%;
     text-align: center;
+    width: 45%;
 }
 
 .resume-skills {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 40%;
     text-align: center;
+    width: 45%;
 }
 
 .resume-download h2 {
-    font-size: 142px;
-    line-height: 122px;
+    font-size: 102px;
+    line-height: 82px;
     font-weight: 800;
     font-family: Gotham Ultra;
     letter-spacing: 4px;
@@ -282,8 +282,8 @@ p.bio {
 }
 
 .resume-skills h2 {
-    font-size: 142px;
-    line-height: 122px;
+    font-size: 102px;
+    line-height: 82px;
     font-weight: 800;
     font-family: Gotham Ultra;
     letter-spacing: 4px;
@@ -441,10 +441,16 @@ footer {
 /* Media Queries */
 
 /* Mobile */
-@media only screen and (max-width: 480px) {
+
+@media only screen and (max-width: 767px) {
+
+    /* Top level */
+
     #root {
         height: 100vh;
     }
+
+    /* Nav */
 
     nav {
         flex-direction: column;
@@ -465,34 +471,200 @@ footer {
         margin: 0;
         padding: 0;
         font-size: 20px;
-        margin: 0 7.5px;
+        margin: 0 12.5px;
     }
+
+    /* About */
 
     .howdy {
         flex-direction: column;
     }
-}
 
-.about img {
-    margin: 20px 0;
-}
+    .about img {
+        margin: 20px 0;
+    }
 
-h2.howdy {
-    font-size: 62px;
-    line-height: 62px;
-    letter-spacing: 0px;
-}
+    h2.howdy {
+        font-size: 62px;
+        line-height: 62px;
+        letter-spacing: 0px;
+    }
 
-p.bio {
-    font-size: 14px;
-    text-align: center;
-}
+    p.bio {
+        font-size: 18px;
+        text-align: center;
+        width: 355px;
+    }
 
-/* Tablets */
-@media only screen and (min-width: 481px) and (max-width: 768px) {}
+    /* Portfolio */
+
+    .portfolio h2 {
+        font-size: 60px;
+    }
+
+    .card-row {
+        flex-direction: column;
+    }
+
+    .card-blue {
+        width: 300px;
+        height: 300px;
+    }
+
+    .card-pink {
+        width: 300px;
+        height: 300px;
+    }
+
+    /* Resume */
+
+    .resume {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resume-download,
+    .resume-skills {
+        width: 80%;
+    }
+
+    .resume-download {
+        margin-bottom: 40px;
+    }
+
+    .resume-download h2 {
+        font-size: 62px;
+        line-height: 52px;
+    }
+
+    .resume-skills h2 {
+        font-size: 62px;
+        line-height: 52px;
+    }
+
+    /* Contact */
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .holler-container {
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .contact .holler-container h2 {
+        font-size: 82px;
+        line-height: 62px;
+    }
+
+    .contact .form-container {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    #contact-form {
+        width: 85%;
+    }
+}
 
 /* Small screens, laptops */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {}
 
-/* Desktops */
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    /* Nav */
+
+    .nav-right a {
+        font-size: 20px;
+        margin: 0 7.5px;
+    }
+
+    /* About */
+
+    h2.howdy {
+        font-size: 112px;
+        line-height: 92px;
+        letter-spacing: 0px;
+        text-align: center;
+        display: block;
+    }
+
+    p.bio {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    /* Portfolio */
+
+    .portfolio h2 {
+        font-size: 65px;
+    }
+
+    .card-row {
+        flex-direction: column;
+    }
+
+    .card-blue {
+        width: 275px;
+        height: 275px;
+    }
+
+    .card-pink {
+        width: 275px;
+        height: 275px;
+    }
+
+    /* Resume */
+
+    .resume {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resume-download,
+    .resume-skills {
+        width: 80%;
+    }
+
+    .resume-download {
+        margin-bottom: 40px;
+    }
+
+    .resume-download h2 {
+        font-size: 82px;
+        line-height: 62px;
+    }
+
+    .resume-skills h2 {
+        font-size: 82px;
+        line-height: 62px;
+    }
+
+    /* Contact */
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .holler-container {
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .contact .holler-container h2 {
+        font-size: 102px;
+        line-height: 82px;
+    }
+
+    .contact .form-container {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    #contact-form {
+        width: 100%;
+    }
+}
