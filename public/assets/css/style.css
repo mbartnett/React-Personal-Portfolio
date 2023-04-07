@@ -45,7 +45,7 @@ h1 {
 
 h2 {
     font-size: 24px;
-    font-family: 'Gotham Black', 'Arial Black', Arial;
+    font-family: 'Gotham Black', 'Arial Black', Arial, Helvetica, sans-serif;
     ;
     margin: 0;
 }
@@ -117,7 +117,7 @@ h2.howdy {
     font-size: 182px;
     line-height: 162px;
     font-weight: 800;
-    font-family: Gotham Ultra;
+    font-family: 'Gotham Ultra', 'Arial Black', Arial, Helvetica, sans-serif;
     letter-spacing: 4px;
     background: linear-gradient(to bottom, #ff00ff, #ccff00);
     -webkit-background-clip: text;
@@ -208,14 +208,14 @@ p.bio {
 
 .portfolio h2 {
     font-size: 75px;
-    font-family: 'Gotham Ultra', 'Arial Black', Arial;
+    font-family: 'Gotham Ultra', 'Arial Black', Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
     font-weight: 500;
 }
 
 .portfolio h3 {
     font-size: 30px;
-    font-family: 'Gotham Ultra', 'Arial Black', Arial;
+    font-family: 'Gotham Ultra', 'Arial Black', Arial, Helvetica, sans-serif;
     font-weight: 500;
     color: #ffffff;
     line-height: 32px;
@@ -270,7 +270,7 @@ p.bio {
     font-size: 102px;
     line-height: 82px;
     font-weight: 800;
-    font-family: Gotham Ultra;
+    font-family: 'Gotham Ultra', 'Arial Black', Arial, Helvetica, sans-serif;
     letter-spacing: 4px;
     background: linear-gradient(to bottom, #ff00ff, #ccff00);
     -webkit-background-clip: text;
@@ -285,7 +285,7 @@ p.bio {
     font-size: 102px;
     line-height: 82px;
     font-weight: 800;
-    font-family: Gotham Ultra;
+    font-family: 'Gotham Ultra', 'Arial Black', Arial, Helvetica, sans-serif;
     letter-spacing: 4px;
     background: linear-gradient(to bottom, #40c9ff, #e81cff);
     -webkit-background-clip: text;
@@ -339,7 +339,7 @@ p.bio {
     font-size: 142px;
     line-height: 122px;
     font-weight: 800;
-    font-family: Gotham Ultra;
+    font-family: 'Gotham Ultra', 'Arial Black', Arial, Helvetica, sans-serif;
     letter-spacing: 4px;
     background: linear-gradient(to bottom, #ff00ff, #ccff00);
     -webkit-background-clip: text;
@@ -399,7 +399,7 @@ button[type="submit"] {
     color: white;
     width: 250px;
     height: 60px;
-    font-family: 'Gotham Black';
+    font-family: 'Gotham Black', 'Arial Black', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     font-size: 22px;
     border-style: solid;
@@ -440,15 +440,37 @@ footer {
 
 /* Media Queries */
 
+/* Adjustment for contact page */
+
+@media only screen and (max-width: 1350px) {
+
+    /* Contact */
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .holler-container {
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .contact .holler-container h2 {
+        font-size: 102px;
+        line-height: 82px;
+    }
+
+    .contact .form-container {
+        width: auto;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+}
+
 /* Mobile */
 
 @media only screen and (max-width: 767px) {
-
-    /* Top level */
-
-    #root {
-        height: 100vh;
-    }
 
     /* Nav */
 
@@ -560,13 +582,13 @@ footer {
     }
 
     .contact .form-container {
-        width: 100%;
+        width: 80%;
         padding: 0;
         margin-bottom: 20px;
     }
 
     #contact-form {
-        width: 85%;
+        width: auto;
     }
 }
 
@@ -660,11 +682,8 @@ footer {
     }
 
     .contact .form-container {
+        width: auto;
         padding: 0;
         margin-bottom: 20px;
-    }
-
-    #contact-form {
-        width: 100%;
     }
 }

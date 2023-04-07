@@ -10,7 +10,7 @@ export default function Resume() {
             </div>
             <div class="resume-skills">
                 <h2>Skills</h2>
-                <p class="skills">HTML5 • CSS3 • UI/UX • JavaScript<br></br>Node.js • OOP • Express.js • APIs • MySQL • ORM • MVC • NoSQL • MongoDB • React • Redux • GraphQL • Webpack • jQuery • Wordpress • MailChimp • Creative Cloud
+                <p class="skills">HTML5 • CSS3 • UI/UX • JavaScript • Node.js • OOP • Express.js • APIs • MySQL • ORM • MVC • NoSQL • MongoDB • React • Redux • GraphQL • Webpack • jQuery • Wordpress • MailChimp • Creative Cloud
                 </p>
             </div>
         </section >
