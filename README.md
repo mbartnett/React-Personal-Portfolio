@@ -13,11 +13,15 @@ A React-built portfolio of my full stack web development projects.
 &bull; [How to Contribute](#how-to-contribute)<br>
 &bull; [Questions](#questions)
 
-## Installation & Testing
+## Installation and Testing
 
+To get started with the project, clone the repository, navigate into the root directory of the project, install the dependencies using `npm install`, start the development server using `npm run dev`, and build the project for production using `npm run build`. 
 
 ## Usage
 
+[mbart.net](https://mbart.net)
+
+[SCREENGRABS]
 
 ## License
 
