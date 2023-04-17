@@ -19,7 +19,7 @@ To get started with the project, clone the repository, navigate into the root di
 
 ## Usage
 
-[mbart.net]()
+[mbart.net](https://mbart.net)
 
 ![mbart.net](./public/assets/images/mbart.net.png)
 
