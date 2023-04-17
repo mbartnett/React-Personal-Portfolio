@@ -36,10 +36,16 @@ function Projects() {
                         <a href="https://mbartnett-express-note-taker.herokuapp.com/" target="_blank" rel="noreferrer">link</a> | <a href="https://github.com/mbartnett/Express-Note-Taker" target="_blank" rel="noreferrer">repo</a>
                     </div>
                 </div>
-                <div class="card-pink">
+                {/* <div class="card-pink">
                     <h3>CODE QUIZ</h3>
                     <div class="portfolio-links">
                         <a href="https://mbartnett.github.io/Web-APIs-Code-Quiz/" target="_blank" rel="noreferrer">link</a> | <a href="https://github.com/mbartnett/Web-APIs-Code-Quiz" target="_blank" rel="noreferrer">repo</a>
+                    </div>
+                </div> */}
+                <div class="card-pink">
+                    <h3>BIRD BRAIN</h3>
+                    <div class="portfolio-links">
+                        <a href="https://birdbrain.herokuapp.com/" target="_blank" rel="noreferrer">link</a> | <a href="https://github.com/samocain93/bird-brain/" target="_blank" rel="noreferrer">repo</a>
                     </div>
                 </div>
             </div>
